@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
+gem 'sqlite3', group: :development
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
 gem "twitter-bootstrap-rails"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.2'
